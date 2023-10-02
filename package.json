@@ -1,10 +1,11 @@
 {
+  "type": "module",
   "name": "cypress",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress/e2e/login/login.feature"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,12 @@
   },
   "homepage": "https://github.com/oksanapazderska/cypress#readme",
   "devDependencies": {
-    "cypress": "^13.3.0"
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.6",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^13.3.0",
+    "esbuild": "^0.17.0"
+  },
+  "dependencies": {
+    "@cypress/webpack-preprocessor": "^6.0.0"
   }
 }
