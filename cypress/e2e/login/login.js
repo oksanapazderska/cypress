@@ -11,4 +11,5 @@ Then(`the url is {word}`, (url) => {
 
 Then(`I'm logged in`, () => {
     cy.get('#flash').should('contain.text', 'You logged into a secure area!')
+//    checking push to main
 })
